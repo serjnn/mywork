@@ -1,0 +1,826 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      .iphone-14-main,
+.iphone-14-main * {
+  box-sizing: border-box;
+}
+body{
+  background: #0f0c0f;
+  font-family: 'Roboto Regular';
+}
+.text_input {
+  color: #EEECEE;
+  background-color: #020002;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+@font-face {
+  font-family: Roboto Regular;
+  font-weight: normal;
+  src: url(Font/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto Medium;
+  font-weight: bold;
+  src: url(Font/Roboto-Medium.ttf);
+}
+
+.input_photo {
+  width: 600px;
+  height: 800px;
+  background: #ffffff;
+  color: #020002;
+  position: absolute;
+  font-size: 24px;
+  padding-block: 10px 20px;
+  right: 4%;
+  top: 20%;
+}
+
+.input_info{
+  width: 600px;
+	height: 800px;
+	background: #ffffff;
+  color: #020002;
+  position: absolute;
+  font-size: 24px;
+  padding-block: 10px 20px;
+  left: 4%;
+  top: 20%;
+}
+
+#divloc, #his1, #his2, #his3, #his4, #his5, #pk, #subscribers, #subscriptions {
+  text-align: center;
+}
+
+#divloc,  #pk, #subscribers, #subscriptions, #info1{
+  font-family: 'Roboto Medium';
+  font-weight: medium;
+  color: #FCFAFC;
+}
+
+.iphone-14-main {
+  background: #020002;
+  width: 430px;
+  height: 932px;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  overflow-y: auto;
+}
+
+input[type=text], select {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#text_btn {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#text_btn:hover {background-color: #3e8e41}
+
+#text_btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+#photo_btn {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#photo_btn:hover {background-color: rgb(132, 26, 26)}
+
+#photo_btn:active {
+  background-color: rgb(132, 26, 26);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.group-4 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-18 {
+  background: #e73931;
+  border-radius: 15px;
+  width: 78.49px;
+  height: 24.06px;
+  position: absolute;
+  left: 21px;
+  top: 20px;
+}
+.ellipse-13 {
+  background: #d9d9d9;
+  border-radius: 50%;
+  width: 18.81px;
+  height: 17.29px;
+  position: absolute;
+  left: 50.44px;
+  top: 23.32px;
+}
+.ellipse-14 {
+  background: #e73931;
+  border-radius: 50%;
+  width: 13.9px;
+  height: 12.78px;
+  position: absolute;
+  left: 52.89px;
+  top: 25.58px;
+}
+.ellipse-15 {
+  background: #d9d9d9;
+  border-radius: 50%;
+  width: 7.36px;
+  height: 6.77px;
+  position: absolute;
+  left: 56.16px;
+  top: 28.58px;
+}
+.image-7 {
+  width: 108px;
+  height: 22px;
+  position: absolute;
+  left: 303px;
+  top: 21px;
+  object-fit: cover;
+}
+.frame-22 {
+  background: #252225;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #0f0c0f;
+  border-width: 1px;
+  width: 402.4px;
+  height: 56px;
+  position: absolute;
+  left: 9px;
+  top: 298px;
+  overflow: hidden;
+}
+.image-10 {
+  width: 320px;
+  height: 31px;
+  position: absolute;
+  left: 8px;
+  top: 13px;
+  object-fit: cover;
+}
+.group-7 {
+  position: absolute;
+  inset: 0;
+}
+.group-6 {
+  width: 194px;
+  height: 37px;
+  position: static;
+}
+.rectangle-5 {
+  background: #252225;
+  border-radius: 9px;
+  border-style: solid;
+  border-color: #0f0c0f;
+  border-width: 1px;
+  width: 194px;
+  height: 37px;
+  position: absolute;
+  left: 9px;
+  top: 364px;
+}
+.image-8 {
+  width: 170.27px;
+  height: 13px;
+  position: absolute;
+  left: 20.35px;
+  top: 376px;
+  object-fit: cover;
+}
+.group-8 {
+  position: absolute;
+  inset: 0;
+}
+.group-62 {
+  width: 197px;
+  height: 37px;
+  position: static;
+}
+.rectangle-52 {
+  background: #252225;
+  border-radius: 9px;
+  border-style: solid;
+  border-color: #0f0c0f;
+  border-width: 1px;
+  width: 197px;
+  height: 37px;
+  position: absolute;
+  left: 214px;
+  top: 364px;
+}
+.image-9 {
+  width: 149px;
+  height: 13px;
+  position: absolute;
+  left: 238px;
+  top: 376px;
+  object-fit: cover;
+}
+.frame-222 {
+  background: rgba(2, 0, 2, 0.1);
+  width: 143px;
+  height: 36px;
+  position: absolute;
+  left: 286px;
+  top: 527px;
+  overflow: hidden;
+}
+.image-14 {
+  width: 39px;
+  height: 34.17px;
+  position: absolute;
+  left: 75px;
+  top: 2px;
+  object-fit: cover;
+}
+.frame-23 {
+  background: rgba(2, 0, 2, 0.1);
+  width: 143px;
+  height: 36px;
+  position: absolute;
+  left: 143px;
+  top: 528px;
+  overflow: hidden;
+}
+.image-12 {
+  width: 39px;
+  height: 33px;
+  position: absolute;
+  left: 197px;
+  top: 529px;
+  object-fit: cover;
+}
+.frame-24 {
+  background: rgba(2, 0, 2, 0.1);
+  width: 143px;
+  height: 36px;
+  position: absolute;
+  left: 0px;
+  top: 528px;
+  overflow: hidden;
+}
+.image-11 {
+  width: 39.19px;
+  height: 33px;
+  position: absolute;
+  left: 52px;
+  top: 3px;
+  object-fit: cover;
+}
+.image-23 {
+  width: 264px;
+  height: 24px;
+  position: absolute;
+  left: 9px;
+  top: 264px;
+  object-fit: cover;
+}
+.rectangle-8 {
+  background: #dddadd;
+  width: 136px;
+  height: 2px;
+  position: absolute;
+  left: 7px;
+  top: 567px;
+}
+.text_input.frame-223 {
+  width: 258px;
+  height: 60px;
+  position: absolute;
+  left: 9px;
+  top: 200px;
+  overflow: hidden;
+}
+.text_input.frame-224 {
+  width: 268.75px;
+  height: 21px;
+  position: absolute;
+  left: 11px;
+  top: 53px;
+  overflow: hidden;
+}
+.image-16 {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 286px;
+  top: 56px;
+  object-fit: cover;
+}
+.image-20 {
+  width: 25px;
+  height: 27px;
+  position: absolute;
+  left: 343px;
+  top: 52px;
+  object-fit: cover;
+}
+.image-232 {
+  width: 21px;
+  height: 16px;
+  position: absolute;
+  left: 310px;
+  top: 58px;
+  object-fit: cover;
+}
+.ellipse-9 {
+  background: rgba(255, 0, 184, 0.5);
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #252225;
+  border-width: 1px;
+  width: 66px;
+  height: 64px;
+  position: absolute;
+  left: 24px;
+  top: 411px;
+}
+.ellipse-10 {
+  background: rgba(255, 0, 184, 0.5);
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #252225;
+  border-width: 1px;
+  width: 66px;
+  height: 64px;
+  position: absolute;
+  left: 105px;
+  top: 411px;
+}
+.ellipse-142 {
+  background: rgba(255, 0, 184, 0.5);
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #252225;
+  border-width: 1px;
+  width: 66px;
+  height: 64px;
+  position: absolute;
+  left: 186px;
+  top: 411px;
+}
+.ellipse-11 {
+  background: rgba(255, 0, 184, 0.5);
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #252225;
+  border-width: 1px;
+  width: 66px;
+  height: 64px;
+  position: absolute;
+  left: 267px;
+  top: 411px;
+}
+.ellipse-12 {
+  background: rgba(255, 0, 184, 0.5);
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #252225;
+  border-width: 1px;
+  width: 66px;
+  height: 64px;
+  position: absolute;
+  left: 348px;
+  top: 411px;
+}
+.text_input.frame-225 {
+  width: 65px;
+  height: 20px;
+  position: absolute;
+  left: 25px;
+  top: 485px;
+  overflow: hidden;
+}
+.text_input.frame-25 {
+  width: 65px;
+  height: 20px;
+  position: absolute;
+  left: 105px;
+  top: 485px;
+  overflow: hidden;
+}
+.text_input.frame-26 {
+  width: 65px;
+  height: 20px;
+  position: absolute;
+  left: 185px;
+  top: 485px;
+  overflow: hidden;
+}
+.text_input.frame-27 {
+  width: 65px;
+  height: 20px;
+  position: absolute;
+  left: 265px;
+  top: 485px;
+  overflow: hidden;
+}
+.text_input.frame-28 {
+  width: 65px;
+  height: 20px;
+  position: absolute;
+  left: 347px;
+  top: 485px;
+  overflow: hidden;
+}
+.frame-32 {
+  width: 430px;
+  height: 363px;
+  position: absolute;
+  left: 0px;
+  top: 569px;
+  overflow: hidden;
+}
+.rectangle-2 {
+  background: rgba(255, 0, 184, 0.5);
+  width: 142px;
+  height: 143px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+}
+.rectangle-3 {
+  background: rgba(255, 0, 184, 0.5);
+  width: 142px;
+  height: 143px;
+  position: absolute;
+  left: 146px;
+  top: 2px;
+}
+.rectangle-4 {
+  background: rgba(255, 0, 184, 0.5);
+  width: 142px;
+  height: 143px;
+  position: absolute;
+  left: 290px;
+  top: 2px;
+}
+.rectangle-53 {
+  background: rgba(255, 0, 184, 0.5);
+  width: 142px;
+  height: 143px;
+  position: absolute;
+  left: 290px;
+  top: 146px;
+}
+.rectangle-6 {
+  background: rgba(255, 0, 184, 0.5);
+  width: 142px;
+  height: 143px;
+  position: absolute;
+  left: 146px;
+  top: 146px;
+}
+.rectangle-7 {
+  background: rgba(255, 0, 184, 0.5);
+  width: 142px;
+  height: 143px;
+  position: absolute;
+  left: 2px;
+  top: 146px;
+}
+.rectangle-19 {
+  background: #020002;
+  width: 54px;
+  height: 46px;
+  position: absolute;
+  left: 376px;
+  top: 289px;
+}
+.rectangle-72 {
+  background: #f7f4f7;
+  border-radius: 6px;
+  width: 198px;
+  height: 3px;
+  position: absolute;
+  left: 116px;
+  top: 349px;
+}
+.image-5 {
+  width: 376px;
+  height: 47px;
+  position: absolute;
+  left: 0px;
+  top: 858px;
+  object-fit: cover;
+}
+.ellipse-92 {
+  background: rgba(255, 0, 184, 0.5);
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 2px;
+  width: 28px;
+  height: 29px;
+  position: absolute;
+  left: 376px;
+  top: 867px;
+}
+.image-233 {
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 386px;
+  top: 898px;
+  object-fit: cover;
+}
+.frame-226 {
+  background: #020002;
+  width: 36px;
+  height: 34px;
+  position: absolute;
+  left: 380px;
+  top: 51px;
+  overflow: hidden;
+}
+.image-21 {
+  width: 27px;
+  height: 25px;
+  position: absolute;
+  left: 4px;
+  top: 5px;
+  object-fit: cover;
+}
+.image-234 {
+  width: 239px;
+  height: 15.26px;
+  position: absolute;
+  left: 177px;
+  top: 143px;
+  object-fit: cover;
+}
+.text_input.frame-227 {
+  width: 114px;
+  height: 18px;
+  position: absolute;
+  left: 9px;
+  top: 176px;
+  overflow: hidden;
+}
+.text_input.frame-11 {
+  width: 58px;
+  height: 18px;
+  position: absolute;
+  left: 186px;
+  top: 123px;
+  overflow: hidden;
+}
+.text_input.frame-33 {
+  width: 58px;
+  height: 18px;
+  position: absolute;
+  left: 268px;
+  top: 123px;
+  overflow: hidden;
+}
+.text_input.frame-34 {
+  width: 58px;
+  height: 16px;
+  position: absolute;
+  left: 350px;
+  top: 123px;
+  overflow: hidden;
+}
+.group-10 {
+  position: absolute;
+  inset: 0;
+}
+.frame-3 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 67.16px;
+  height: 68.42px;
+  position: absolute;
+  left: 18.4px;
+  top: 90.95px;
+  overflow: hidden;
+}
+.ellipse-1 {
+  background: rgba(255, 0, 184, 0.5);
+  border-radius: 50%;
+  width: 79.93px;
+  height: 80.05px;
+  position: absolute;
+  left: 13.7px;
+  top: 85.47px;
+}
+.ellipse-2 {
+  background: rgba(2, 0, 2, 0.1);
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #605656;
+  border-width: 3px;
+  width: 90px;
+  height: 91px;
+  position: absolute;
+  left: 9px;
+  top: 80px;
+}
+
+      a,
+      button,
+      input,
+      select,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: none;
+        text-decoration: none;
+        appearance: none;
+        background: none;
+
+        -webkit-font-smoothing: antialiased;
+      }
+    </style>
+    <script>
+      let data = document.querySelector('.input_info');
+    let button = document.querySelector('#text_btn');
+    button.onclick = function () {
+        let login = document.querySelector('#login').value;
+        let publ = document.querySelector('#publ').value;
+        let sub = document.querySelector('#sub').value;
+        let sc = document.querySelector('#sc').value;
+        let inf1 = document.querySelector('#inf1').value;
+        let inf2 = document.querySelector('#inf2').value;
+        let histor1 = document.querySelector('#histor1').value;
+        let histor2 = document.querySelector('#histor2').value;
+        let histor3 = document.querySelector('#histor3').value;
+        let histor4 = document.querySelector('#histor4').value;
+        let histor5 = document.querySelector('#histor5').value;
+        document.getElementById("divloc").textContent = login;
+        document.getElementById("pk").textContent = publ;
+        document.getElementById("subscribers").textContent = sub
+        document.getElementById("subscriptions").textContent = sc;
+        document.getElementById("info1").textContent = inf1;
+        document.getElementById("info2").textContent = inf2;
+        document.getElementById("his1").textContent = histor1;
+        document.getElementById("his2").textContent = histor2;
+        document.getElementById("his3").textContent = histor3;
+        document.getElementById("his4").textContent = histor4;
+        document.getElementById("his5").textContent = histor5;
+
+    };
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="input_info">
+      Логин <input type="text" id='login'><br>
+      Публикации <input type="text" id='publ'><br>
+      Подписчики <input type="text" id="sub"><br>
+      Подписки <input type="text" id="sc"><br>
+      Инфа под проф 1 <input type="text" id="inf1"><br>
+      Инфа под проф 2 <input type="text" id="inf2"><br>
+      История 1 <input type="text" id="histor1"><br>
+      История 2 <input type="text" id="histor2"><br>
+      История 3 <input type="text" id="histor3"><br>
+      История 4 <input type="text" id="histor4"><br>
+      История 5 <input type="text" id="histor5"><br>
+      <button id="text_btn">Submit</button>
+    </div>
+    <script type="text/javascript" src="text_script.js"></script>
+    <form class="input_photo" accept="#" method="post" enctype="multipart/form-data">
+      <div> <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Отправить</button>
+    </form>
+  </div>
+      
+      
+      <input type="file" id="avatar" name="avatar" accept="image/*"/><br>
+      <button id="photo_btn" type="submit">Submit</button>
+    </form>
+    <div class="iphone-14-main">
+      <div class="group-4">
+        <div class="rectangle-18"></div>
+        <div class="ellipse-13"></div>
+        <div class="ellipse-14"></div>
+        <div class="ellipse-15"></div>
+      </div>
+      <img class="image-7" src="{% static 'img/image-70.png' %}"/>
+      <div class="frame-22">
+        <img class="image-10" src="{% static 'img/image-100.png' %}"/>
+      </div>
+      <div class="group-7">
+        <div class="group-6">
+          <div class="rectangle-5"></div>
+        </div>
+        <img class="image-8" src="static/image-80.png" />
+      </div>
+      <div class="group-8">
+        <div class="group-62">
+          <div class="rectangle-52"></div>
+        </div>
+        <img class="image-9" src="static/image-90.png" />
+      </div>
+      <div class="frame-222">
+        <img class="image-14" src="static/image-140.png" />
+      </div>
+      <div class="frame-23"></div>
+      <img class="image-12" src="static/image-120.png" />
+      <div class="frame-24">
+        <img class="image-11" src="static/image-110.png" />
+      </div>
+      <img class="image-23" src="static/image-230.png" />
+      <div class="rectangle-8"></div>
+      <div class="text_input frame-223", id="info2">Блохер</div>
+      <div class="text_input frame-224", id="divloc">Хуке</div>
+      <img class="image-16" src="static/image-160.png" />
+      <img class="image-20" src="static/image-200.png" />
+      <img class="image-232" src="static/image-231.png" />
+      <div class="ellipse-9"></div>
+      <div class="ellipse-10"></div>
+      <div class="ellipse-142"></div>
+      <div class="ellipse-11"></div>
+      <div class="ellipse-12"></div>
+      <div class="text_input frame-225" id="his1">df</div>
+      <div class="text_input frame-25" id="his2">sdf</div>
+      <div class="text_input frame-26" id="his3">asd</div>
+      <div class="text_input frame-27" id="his4">dsa</div>
+      <div class="text_input frame-28" id="his5">sd</div>
+      <div class="frame-32">
+        <div class="rectangle-2"></div>
+        <div class="rectangle-3"></div>
+        <div class="rectangle-4"></div>
+        <div class="rectangle-53"></div>
+        <div class="rectangle-6"></div>
+        <div class="rectangle-7"></div>
+        <div class="rectangle-19"></div>
+        <div class="rectangle-72"></div>
+      </div>
+      <img class="image-5" src="static/image-50.png" />
+      <div class="ellipse-92"></div>
+      <img class="image-233" src="static/image-232.png" />
+      <div class="frame-226">
+        <img class="image-21" src="static/image-210.png" />
+      </div>
+      <img class="image-234" src="static/image-233.png" />
+      <div class="text_input frame-227", id="info1">fhg</div>
+      <div class="text_input frame-11", id="pk">ass</div>
+      <div class="text_input frame-33", id="subscribers">asas</div>
+      <div class="text_input frame-34", id="subscriptions">asasf</div>
+      <div class="group-10">
+        <div class="frame-3"></div>
+        <div class="ellipse-1"></div>
+        <div class="ellipse-2"></div>
+      </div>
+    </div>
+    <script src="jqery/jquery-3.7.1.min.js"></script>
+  </body>
+</html>
