@@ -11,8 +11,8 @@ def main(request):
         return redirect('main')  # Замените 'success_page' на URL вашей страницы успешного завершения
     else:
         form = YourModelForm()
-
-    return render(request, 'main/index.html', {'form': form, 'title': 'Главная'})
+    spec = images.objects.filter(id__gt = 30)
+    return render(request, 'main/index.html', {'form': form, 'title': 'Главная', 'spec':spec})
 
 
 
