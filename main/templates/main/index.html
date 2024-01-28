@@ -1,135 +1,21 @@
-
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <script type="text/javascript" src="{% static 'js/jquery-3.7.1.js' %}"></script>
-    <style>
-      
-      a,
-      button,
-      input,
-      select,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        border: none;
-        text-decoration: none;
-        appearance: none;
-        background: none;
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form method="post" enctype="multipart/form-data" class="input_photo">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit" id="photo_btn">ОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправить</button>
+  </form>
+  <div>
+    {% for image in spec %}
+        <img src="{{ image.image.url }}" alt="Image {{ image.id }}">
+    {% endfor %}
+  </div>
 
-        -webkit-font-smoothing: antialiased;
-      }
-    </style>
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="input_info">
-      Логин <input type="text" id='login'><br>
-      Публикации <input type="text" id='publ'><br>
-      Подписчики <input type="text" id="sub"><br>
-      Подписки <input type="text" id="sc"><br>
-      Инфа под проф 1 <input type="text" id="inf1"><br>
-      Инфа под проф 2 <input type="text" id="inf2"><br>
-      История 1 <input type="text" id="histor1"><br>
-      История 2 <input type="text" id="histor2"><br>
-      История 3 <input type="text" id="histor3"><br>
-      История 4 <input type="text" id="histor4"><br>
-      История 5 <input type="text" id="histor5"><br>
-      <button id="text_btn">Submit</button>
-      <script src="{% static 'js/script.js' %}"></script>
-    </div>
-    <div> 
-      <form method="post" enctype="multipart/form-data" class="input_photo">
-        {% csrf_token %}
-        {{ form }}
-        <button type="submit" id="photo_btn">ОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправитьОтправить</button>
-      </form>
-    </div>
-    <div class="iphone-14-main">
-      <div class="group-4">
-        <div class="rectangle-18"></div>
-        <div class="ellipse-13"></div>
-        <div class="ellipse-14"></div>
-        <div class="ellipse-15"></div>
-      </div>
-      <img class="image-7" src="{% static 'img/image-70.png' %}"/>
-      <div class="frame-22">
-        <img class="image-10" src="{% static 'img/image-100.png' %}"/>
-      </div>
-      <div class="group-7">
-        <div class="group-6">
-          <div class="rectangle-5"></div>
-        </div>
-        <img class="image-8" src="{% static  'img/image-80.png' %}" />
-      </div>
-      <div class="group-8">
-        <div class="group-62">
-          <div class="rectangle-52"></div>
-        </div>
-        <img class="image-9" src="{% static  'img/image-90.png' %}" />
-      </div>
-      <div class="frame-222">
-        <img class="image-14" src="{% static  'img/image-140.png' %}" />
-      </div>
-      <div class="frame-23"></div>
-      <img class="image-12" src="{% static  'img/image-120.png' %}" />
-      <div class="frame-24">
-        <img class="image-11" src="{% static  'img/image-110.png' %}" />
-      </div>
-      <img class="image-23" src="{% static  'img/image-230.png' %}" />
-      <div class="rectangle-8"></div>
-      <div class="text_input frame-223" id="info2">Блохер</div>
-      <div class="text_input frame-224" id="divloc">Хуке</div>
-      <img class="image-16" src="{% static  'img/image-160.png' %}" />
-      <img class="image-20" src="{% static  'img/image-200.png' %}" />
-      <img class="image-232" src="{% static  'img/image-231.png' %}" />
-      <img class="ellipse-9" src="C:\Users\Chunga changa\Downloads\inst\inst\som\media\images\default.png">
-      <img class="ellipse-10" src="C:\Users\Chunga changa\Downloads\inst\inst\som\media\images\default.png">
-      <img class="ellipse-142" src="C:\Users\Chunga changa\Downloads\inst\inst\som\media\images\default.png">
-      <img class="ellipse-11" src="C:\Users\Chunga changa\Downloads\inst\inst\som\media\images\default.png">
-      <img class="ellipse-12" src="C:\Users\Chunga changa\Downloads\inst\inst\som\media\images\default.png">
-      <div class="text_input frame-225" id="his1">df</div>
-      <div class="text_input frame-25" id="his2">sdf</div>
-      <div class="text_input frame-26" id="his3">asd</div>
-      <div class="text_input frame-27" id="his4">dsa</div>
-      <div class="text_input frame-28" id="his5">sd</div>
-      <div class="frame-32">
-        <img class="rectangle-2" src="{{ object.img.url }}">
-        <div class="rectangle-3"></div>
-        <div class="rectangle-4"></div>
-        <div class="rectangle-53"></div>
-        <div class="rectangle-6"></div>
-        <div class="rectangle-7"></div>
-        <div class="rectangle-19"></div>
-        <div class="rectangle-72"></div>
-      </div>
-      <img class="image-5" src="{% static  'img/image-50.png' %}" />
-      <div class="ellipse-92"></div>
-      <img class="image-233" src="{% static  'img/image-232.png' %}" />
-      <div class="frame-226">
-        <img class="image-21" src="{% static  'img/image-210.png' %}" />
-      </div>
-      <img class="image-234" src="{% static  'img/image-233.png' %}" />
-      <div class="text_input frame-227" id="info1">fhg</div>
-      <div class="text_input frame-11" id="pk">ass</div>
-      <div class="text_input frame-33" id="subscribers">asas</div>
-      <div class="text_input frame-34" id="subscriptions">asasf</div>
-      <div class="group-10">
-        <div class="frame-3"></div>
-        <div class="ellipse-1"></div>
-        <div class="ellipse-2"></div>
-      </div>
-    </div>
-  </body>
+</body>
 </html>
