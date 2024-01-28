@@ -1,0 +1,150 @@
+@keyframes animation-9775 {
+    from {
+      width: 36px;
+      height: 34px;
+      top: 0px;
+      left: 0px;
+      opacity: 1;
+      z-index: 1;
+      transform: rotate(0deg);
+      overflow: hidden;
+      border-radius: 0px 0px 0px 0px;
+      background: #020002ff;
+    }
+    to {
+      width: 430px;
+      height: 835px;
+      top: 0px;
+      left: 0px;
+      opacity: 1;
+      z-index: 16;
+      transform: rotate(0deg);
+      border-radius: 9px 9px 0px 0px;
+      background: #252225ff;
+    }
+  }
+  .animationClass-9775 {
+    animation: animation-9775 0.30000001192092896s ease-in-out 0s normal forwards;
+  }
+  @keyframes animation-null7117 {
+    from {
+      opacity: 0;
+      z-index: -10;
+    }
+    to {
+      width: 427px;
+      height: 828.62646484375px;
+      top: 3.186767578125px;
+      left: 0px;
+      opacity: 1;
+      z-index: 0;
+      transform: rotate(0deg);
+      border-radius: 0px 0px 0px 0px;
+    }
+  }
+  .animationClass-null7117 {
+    animation: animation-null7117 0.30000001192092896s ease-in-out 0s normal
+      forwards;
+  }
+  @keyframes animation-null7114 {
+    from {
+      opacity: 0;
+      z-index: -10;
+    }
+    to {
+      width: 427px;
+      height: 669.1358032226562px;
+      top: 0px;
+      left: 0px;
+      opacity: 1;
+      z-index: 0;
+      transform: rotate(0deg);
+      overflow: hidden;
+      border-radius: 0px 0px 0px 0px;
+    }
+  }
+  .animationClass-null7114 {
+    animation: animation-null7114 0.30000001192092896s ease-in-out 0s normal
+      forwards;
+  }
+  @keyframes animationBg-7114 {
+    from {
+      opacity: 1;
+    }
+    to {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("./images/image0.png");
+      opacity: 1;
+    }
+  }
+  .bgClass-7114 {
+    animation: animationBg-7114 0.30000001192092896s ease-in-out 0s normal
+      forwards;
+  }
+  @keyframes animation-null7116 {
+    from {
+      opacity: 0;
+      z-index: -10;
+    }
+    to {
+      width: 427px;
+      height: 159.49066162109375px;
+      top: 669.1357421875px;
+      left: 0px;
+      opacity: 1;
+      z-index: 1;
+      transform: rotate(0deg);
+      overflow: hidden;
+      border-radius: 0px 0px 0px 0px;
+    }
+  }
+  .animationClass-null7116 {
+    animation: animation-null7116 0.30000001192092896s ease-in-out 0s normal
+      forwards;
+  }
+  @keyframes animationBg-7116 {
+    from {
+      opacity: 1;
+    }
+    to {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("./images/image1.png");
+      opacity: 1;
+    }
+  }
+  .bgClass-7116 {
+    animation: animationBg-7116 0.30000001192092896s ease-in-out 0s normal
+      forwards;
+  }
+  @keyframes animation-9776 {
+    from {
+      width: 27px;
+      height: 25px;
+      top: 5px;
+      left: 4px;
+      opacity: 1;
+      z-index: 0;
+      transform: rotate(0deg);
+      overflow: hidden;
+      border-radius: 0px 0px 0px 0px;
+    }
+    to {
+      opacity: 0;
+      z-index: -10;
+    }
+  }
+  .animationClass-9776 {
+    animation: animation-9776 0.30000001192092896s ease-in-out 0s normal forwards;
+  }

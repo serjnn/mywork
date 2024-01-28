@@ -25,3 +25,26 @@ let data = document.querySelector('.input_info');
         document.getElementById("his5").textContent = histor5;
 
     };
+
+    function runAnimations() {
+        document.querySelector("#id-9775").addEventListener("click", func_9775_7110);
+      
+        function func_9775_7110() {
+          document.querySelector("#id-9775").classList.add("animationClass-9775");
+          document.querySelector("#id-7117").classList.add("animationClass-null7117");
+          document.querySelector("#id-7114").classList.add("animationClass-null7114");
+          document
+            .querySelector("#id-7114 > div:first-child")
+            .classList.add("bgClass-7114");
+          document.querySelector("#id-7116").classList.add("animationClass-null7116");
+          document
+            .querySelector("#id-7116 > div:first-child")
+            .classList.add("bgClass-7116");
+          document.querySelector("#id-9776").classList.add("animationClass-9776");
+          document
+            .querySelector("#id-9775")
+            .removeEventListener("click", func_9775_7110);
+        }
+      }
+      runAnimations();
+      
