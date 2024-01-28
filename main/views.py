@@ -11,8 +11,12 @@ def main(request):
         return redirect('main')  # Замените 'success_page' на URL вашей страницы успешного завершения
     else:
         form = YourModelForm()
-    spec = images.objects.filter(id__gt = 0)
-    return render(request, 'main/index.html', {'form': form, 'title': 'Главная', 'spec':spec})
+    spec = images.objects.all()
+    first = images.objects.order_by('id').first()
+    return render(request, 'main/index.html', {'form': form, 'title': 'Главная', 'spec':spec, 'first' : first,})
 
 
+def delete_all_images(request):
+    images.objects.all().delete()
+    return redirect('main')
 
